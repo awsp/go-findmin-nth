@@ -41,6 +41,17 @@ func TestMinMNegative(t *testing.T) {
 	assert(t, expected, ans)
 }
 
+func TestMinSameValue(t *testing.T) {
+	var input = []int{
+		3, 2, 9, 16, 3, 11, 45, 2,
+	}
+
+	ans := Min(input, 1)
+	expected := 2
+
+	assert(t, expected, ans)
+}
+
 func TestFindBoundary(t *testing.T) {
 	var input = []int{
 		3, 2, 9, 16, 11, 45,
